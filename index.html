@@ -8,10 +8,67 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Datortīkli</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
     </head>
     <body>
+        
+        <ul>
+        <div id="navbar">
+  <a href="#datori">datori</a>
+  <a href="#tīkls">tīkls</a>
+  <a href="#internets">internets</a>
+  <a href="TestWeb/skola.html"></a> 
+  <a href="TestWeb/baiti.html"></a>
+        </ul>
+  
+</div>
+
+        <div style="padding:15px 15px 2500px;font-size:30px">
+             
         <h1 class="center">Datortīklu veidi</h1>
-        <p>Datortīkls (network) jeb tīkls ir datoru un ar tiem saistīto ierīču grupa, kas savstarpēji<br>savienotas ar sakaru kanāliem un kas nodrošina datņu un citu resursu kopīgas izmantošanas iespējas (resource sharing) vairākiem lietotājiem.</p>
+        <p><b>Datortīkls (network) jeb tīkls ir datoru un ar tiem saistīto ierīču grupa, kas savstarpēji<br>savienotas ar sakaru kanāliem un kas nodrošina datņu un citu resursu kopīgas izmantošanas iespējas (resource sharing) vairākiem lietotājiem.</b></p>
+        <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        </div>
+        
+        <script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction();};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
         <ul>
             <li>Lokālais tīkls (LAN)</li>
             <li>Teritoriālais tīkls (WAN)</li>
